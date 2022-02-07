@@ -6,17 +6,6 @@
     "subTitle": "Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.",
     "image": "assets/landing/img/tv.png",
     "video": "assets/landing/video/video-tv-0819.m4v",
-    "videoConfig": {
-      "zIndex": 0,
-      "width": "100%",
-      "height": "100%",
-      "maxWidth": "73%",
-      "maxHeight": "54%",
-      "position": "absolute",
-      "top": "46%",
-      "left": "50%",
-      "transform": "translate(-50%,-50%)"
-    },
     "alt": "Enjoy on your TV.",
     "direction": "row"
   },
@@ -35,17 +24,6 @@
     "subTitle": "Stream unlimited films and TV programmes on your phone, tablet, laptop and TV without paying more.",
     "image": "assets/landing/img/device-pile.png",
     "video": "assets/landing/video/video-devices.m4v",
-    "videoConfig": {
-      "zIndex": 0,
-      "width": "100%",
-      "height": "100%",
-      "maxWidth": "65%",
-      "maxHeight": "40%",
-      "position": "absolute",
-      "top": "46%",
-      "left": "50%",
-      "transform": "translate(-50%,-90%)"
-    },
     "alt": "Watch everywhere.",
     "direction": "row"
   }
