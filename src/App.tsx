@@ -6,28 +6,32 @@ import jumboData from './fixtures/jumbo.json';
 
 function App() {
   const user = null;
-  const classes = useStyles();
+
   return (
-    <div className={classes.root}>
+    <div>
       <Jumbotron.Container>
         {jumboData.map((item) => (
           <Jumbotron key={item.id} direction={item.direction}>
-            <p>{item.title}</p>
-            <p>{item.subTitle}</p>
-            <p>{item.image}</p>
-            <p>{item.alt}</p>
+            <Jumbotron.Pane width={'52%'} padding={'0 3rem 0 0'}>
+              <Jumbotron.Title>{item.title}</Jumbotron.Title>
+              <Jumbotron.Subtitle>{item.subTitle}</Jumbotron.Subtitle>
+            </Jumbotron.Pane>
+            <Jumbotron.Pane width="48%">
+              {item.video ? (
+                <Jumbotron.VideoImgComp
+                  vidSrc={item.video}
+                  imgSrc={item.image}
+                  elementType={item.type}
+                />
+              ) : (
+                <Jumbotron.Image src={item.image} alt={item.alt} />
+              )}
+            </Jumbotron.Pane>
           </Jumbotron>
         ))}
       </Jumbotron.Container>
     </div>
   );
 }
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    backgroundColor: '#111',
-    minHeight: '100vh',
-  },
-}));
 
 export default App;
